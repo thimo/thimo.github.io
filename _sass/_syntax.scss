@@ -1,0 +1,410 @@
+/* ==========================================================================
+   Syntax highlighting
+   ========================================================================== */
+div.highlighter-rouge,
+figure.highlight {
+  position: relative;
+  margin-bottom: 1em;
+  font-family: $monospace;
+  font-size: $type-size-7;
+  line-height: 1.8;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background-color: $code-background-color;
+  box-shadow: $box-shadow;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5em;
+    background-color: $lighter-gray;
+    content: "\f121";
+    font-family: "fontawesome" !important;
+    line-height: 1;
+    text-transform: none;
+    speak: none;
+  }
+
+  .highlight {
+    margin: 0;
+    padding: 1em;
+  }
+}
+
+figure.highlight {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.highlight table {
+  font-size: 1em;
+  border: 0;
+
+  td {
+    padding: 5px;
+    border: 0;
+    // line numbers
+    &.gutter {
+      padding-right: 1em;
+      color: $light-gray;
+    }
+  }
+
+  pre {
+    margin: 0;
+  }
+}
+
+.highlight pre {
+  width: 100%;
+}
+
+// thanksful_eyes
+.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight {
+  color: #faf6e4;
+  background-color: #122b3b;
+}
+.highlight .gl {
+  color: #dee5e7;
+  background-color: #4e5d62;
+}
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #6c8b9f;
+  font-style: italic;
+}
+.highlight .cp {
+  color: #b2fd6d;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .err {
+  color: #fefeec;
+  background-color: #cc0000;
+}
+.highlight .gr {
+  color: #fefeec;
+  background-color: #cc0000;
+}
+.highlight .k, .highlight .kd, .highlight .kv {
+  color: #f6dd62;
+  font-weight: bold;
+}
+.highlight .o, .highlight .ow {
+  color: #4df4ff;
+}
+.highlight .p, .highlight .pi {
+  color: #4df4ff;
+}
+.highlight .gd {
+  color: #cc0000;
+}
+.highlight .gi {
+  color: #b2fd6d;
+}
+.highlight .ge {
+  font-style: italic;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .gt {
+  color: #dee5e7;
+  background-color: #4e5d62;
+}
+.highlight .kc {
+  color: #f696db;
+  font-weight: bold;
+}
+.highlight .kn {
+  color: #ffb000;
+  font-weight: bold;
+}
+.highlight .kp {
+  color: #ffb000;
+  font-weight: bold;
+}
+.highlight .kr {
+  color: #ffb000;
+  font-weight: bold;
+}
+.highlight .gh {
+  color: #ffb000;
+  font-weight: bold;
+}
+.highlight .gu {
+  color: #ffb000;
+  font-weight: bold;
+}
+.highlight .kt {
+  color: #b2fd6d;
+  font-weight: bold;
+}
+.highlight .no {
+  color: #b2fd6d;
+  font-weight: bold;
+}
+.highlight .nc {
+  color: #b2fd6d;
+  font-weight: bold;
+}
+.highlight .nd {
+  color: #b2fd6d;
+  font-weight: bold;
+}
+.highlight .nn {
+  color: #b2fd6d;
+  font-weight: bold;
+}
+.highlight .bp {
+  color: #b2fd6d;
+  font-weight: bold;
+}
+.highlight .ne {
+  color: #b2fd6d;
+  font-weight: bold;
+}
+.highlight .nl {
+  color: #ffb000;
+  font-weight: bold;
+}
+.highlight .nt {
+  color: #ffb000;
+  font-weight: bold;
+}
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #f696db;
+  font-weight: bold;
+}
+.highlight .ld {
+  color: #f696db;
+  font-weight: bold;
+}
+.highlight .ss {
+  color: #f696db;
+  font-weight: bold;
+}
+.highlight .s, .highlight .sb, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .sr, .highlight .s1 {
+  color: #fff0a6;
+  font-weight: bold;
+}
+.highlight .se {
+  color: #4df4ff;
+  font-weight: bold;
+}
+.highlight .sc {
+  color: #4df4ff;
+  font-weight: bold;
+}
+.highlight .si {
+  color: #4df4ff;
+  font-weight: bold;
+}
+.highlight .nb {
+  font-weight: bold;
+}
+.highlight .ni {
+  color: #999999;
+  font-weight: bold;
+}
+.highlight .w {
+  color: #BBBBBB;
+}
+.highlight .nf {
+  color: #a8e1fe;
+}
+.highlight .py {
+  color: #a8e1fe;
+}
+.highlight .na {
+  color: #a8e1fe;
+}
+.highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi {
+  color: #a8e1fe;
+  font-weight: bold;
+}
+
+
+.zenburn {
+  // http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html
+  // https://raw.githubusercontent.com/jwarby/pygments-css/master/zenburn.css
+
+  .highlight code,
+  .highlight pre,
+  pre.highlight {
+    color: #fdce93;
+    background-color: #3f3f3f;
+  }
+
+  .highlight .hll {
+    background-color: #222;
+  }
+
+  .highlight .err {
+    color: #e37170;
+    background-color: #3d3535;
+  }
+
+  .highlight .k {
+    color: #f0dfaf;
+  }
+
+  .highlight .p {
+    color: #41706f;
+  }
+
+  .highlight .cs {
+    color: #cd0000;
+    font-weight: 700;
+  }
+
+  .highlight .gd {
+    color: #cd0000;
+  }
+
+  .highlight .ge {
+    color: #ccc;
+    font-style: italic;
+  }
+
+  .highlight .gr {
+    color: red;
+  }
+
+  .highlight .go {
+    color: gray;
+  }
+
+  .highlight .gs {
+    color: #ccc;
+    font-weight: 700;
+  }
+
+  .highlight .gu {
+    color: purple;
+    font-weight: 700;
+  }
+
+  .highlight .gt {
+    color: #0040D0;
+  }
+
+  .highlight .kc {
+    color: #dca3a3;
+  }
+
+  .highlight .kd {
+    color: #ffff86;
+  }
+
+  .highlight .kn {
+    color: #dfaf8f;
+    font-weight: 700;
+  }
+
+  .highlight .kp {
+    color: #cdcf99;
+  }
+
+  .highlight .kr {
+    color: #cdcd00;
+  }
+
+  .highlight .ni {
+    color: #c28182;
+  }
+
+  .highlight .ne {
+    color: #c3bf9f;
+    font-weight: 700;
+  }
+
+  .highlight .nn {
+    color: #8fbede;
+  }
+
+  .highlight .vi {
+    color: #ffffc7;
+  }
+
+  .highlight .c,
+  .highlight .c1,
+  .highlight .cm,
+  .highlight .cp,
+  .highlight .g {
+    color: #7f9f7f;
+  }
+
+  .highlight .l,
+  .highlight .nd,
+  .highlight .nl,
+  .highlight .no,
+  .highlight .nx,
+  .highlight .py,
+  .highlight .w,
+  .highlight .x {
+    color: #ccc;
+  }
+
+  .highlight .n,
+  .highlight .nv,
+  .highlight .vg {
+    color: #dcdccc;
+  }
+
+  .highlight .o,
+  .highlight .ow {
+    color: #f0efd0;
+  }
+
+  .highlight .gh,
+  .highlight .gp {
+    color: #dcdccc;
+    font-weight: 700;
+  }
+
+  .highlight .gi,
+  .highlight .kt {
+    color: #00cd00;
+  }
+
+  .highlight .ld,
+  .highlight .s,
+  .highlight .s1,
+  .highlight .s2,
+  .highlight .sb,
+  .highlight .sc,
+  .highlight .sd,
+  .highlight .se,
+  .highlight .sh,
+  .highlight .si,
+  .highlight .sr,
+  .highlight .ss,
+  .highlight .sx {
+    color: #cc9393;
+  }
+
+  .highlight .m,
+  .highlight .il,
+  .highlight .mf,
+  .highlight .mh,
+  .highlight .mi,
+  .highlight .mo {
+    color: #8cd0d3;
+  }
+
+  .highlight .na,
+  .highlight .nt {
+    color: #9ac39f;
+  }
+
+  .highlight .nb,
+  .highlight .bp,
+  .highlight .nc,
+  .highlight .nf,
+  .highlight .vc {
+    color: #efef8f;
+  }
+}
