@@ -11,7 +11,7 @@ title                    : "Thimo's Blog"
 title_separator          : "-"
 name                     : "Thimo Jansen"
 description              : "Thimo Jansen's Blog. About web development and generic tech topics."
-url                      : "https://thimo.github.io"
+url                      : "http://blog.defrog.nl"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "thimo/thimo.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -81,10 +81,10 @@ analytics:
 author:
   name             : "Thimo Jansen"
   avatar           : "/assets/images/avatar.jpg"
-  bio              : "A builder who loves Ruby on Rails and objects with wheels."
+  bio              : "A web developer who loves Ruby on Rails."
   location         : "Arnhem, the Netherlands"
   email            : "thimo@defrog.nl"
-  uri              : "https://www.defrog.nl"
+  uri              :
   bitbucket        :
   codepen          :
   dribbble         :
